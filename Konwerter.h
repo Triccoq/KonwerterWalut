@@ -1,0 +1,8 @@
+//
+// Created by Mój Komputer on 20.06.2024.
+//
+
+#ifndef KONWERTERWALUT_KONWERTER_H
+#define KONWERTERWALUT_KONWERTER_H
+
+#endif //KONWERTERWALUT_KONWERTER_H
