@@ -1,8 +1,22 @@
-//
-// Created by Mój Komputer on 20.06.2024.
-//
+#ifndef CURRENCY_CONVERTER_H
+#define CURRENCY_CONVERTER_H
 
-#ifndef KONWERTERWALUT_KONWERTER_H
-#define KONWERTERWALUT_KONWERTER_H
+#include <map>
+#include <string>
 
-#endif //KONWERTERWALUT_KONWERTER_H
+struct ExchangeRates {
+    double toPLN;
+    double fromPLN;
+};
+
+class CurrencyConverter {
+private:
+    std::map<std::string, ExchangeRates> rates;
+
+public:
+    CurrencyConverter();  // konstruktor
+    void setupRates();    // ustawienie kursów walut
+    double convert(double amount, const std::string& fromCurrency, const std::string& toCurrency);
+};
+
+#endif // CURRENCY_CONVERTER_H
