@@ -1,0 +1,10 @@
+1) Możesz również rozważyć użycie gotowych bibliotek C++ do obsługi API, które mogą ułatwić proces pobierania danych z internetu i zarządzania odpowiedziami JSON. Przykłady takich bibliotek to cpprestsdk (Microsoft C++ REST SDK) lub boost.beast.
+
+2) Pobieranie kursów walutowych z pliku lokalnego lub bazy danych
+
+3) Użycie API REST z wykorzystaniem HTTP/HTTPS
+Zamiast używania libcurl, możesz użyć wbudowanych w C++ mechanizmów do obsługi żądań HTTP/HTTPS, takich jak:
+
+Biblioteka standardowa libhttp: Możesz napisać prostą implementację klienta HTTP/HTTPS przy użyciu sockets i odpowiednich funkcji z biblioteki standardowej C++.
+
+Biblioteki do obsługi HTTP/HTTPS: Istnieją również lekkie i łatwe w użyciu biblioteki do obsługi protokołu HTTP, takie jak cpp-netlib czy Poco (Platform for Ordinary C++ Objects).
